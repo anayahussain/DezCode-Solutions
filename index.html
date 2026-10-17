@@ -1,157 +1,377 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<p><strong>Core Web Vitals for small business</strong> are Google's three real-world measurements of page experience: loading speed (LCP), responsiveness (INP) and visual stability (CLS). According to the HTTP Archive's 2025 Web Almanac, only <strong>48% of mobile websites</strong> pass all three. If your site is in the other 52%, fixing it is one of the most practical steps in a technical SEO plan, and it is worth doing before you spend more on content, link building or ads.</p>
+<title>Core Web Vitals for Small Business: SEO Checklist (2026)</title>
+<meta name="description" content="Only 48% of mobile sites pass Core Web Vitals. A practical technical SEO checklist to fix LCP, INP and CLS on WordPress, Shopify and custom sites.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://anayahussain.github.io/DezCode-Solutions/">
 
-<p>This guide is for US small and mid-sized businesses that depend on their website for leads or online sales. You will get the thresholds, the latest data, a working on-page SEO checklist, and advice on what to fix yourself versus what to hand to a developer.</p>
+<meta property="og:type" content="article">
+<meta property="og:title" content="Core Web Vitals for Small Business: SEO Checklist (2026)">
+<meta property="og:description" content="Only 48% of mobile sites pass Core Web Vitals. A practical technical SEO checklist to fix LCP, INP and CLS.">
+<meta property="og:url" content="https://anayahussain.github.io/DezCode-Solutions/">
+<meta property="og:image" content="https://dezcodesolutions.com/og/og-home.png">
+<meta property="og:site_name" content="DezCode Solutions">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Core Web Vitals for Small Business: SEO Checklist (2026)">
+<meta name="twitter:description" content="Only 48% of mobile sites pass Core Web Vitals. A practical technical SEO checklist to fix LCP, INP and CLS.">
+<meta name="twitter:image" content="https://dezcodesolutions.com/og/og-home.png">
 
-<div style="border:1px solid #ccc; padding:14px; margin:18px 0; background:#f9f9f9;">
-  <strong>Key takeaways</strong>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Core Web Vitals for Small Business: SEO Checklist (2026)",
+  "description": "A practical technical SEO checklist to fix LCP, INP and CLS on WordPress, Shopify and custom websites.",
+  "datePublished": "2026-10-18",
+  "dateModified": "2026-10-18",
+  "inLanguage": "en-US",
+  "mainEntityOfPage": "https://anayahussain.github.io/DezCode-Solutions/",
+  "image": "https://dezcodesolutions.com/og/og-home.png",
+  "author": { "@type": "Organization", "name": "DezCode Solutions", "url": "https://dezcodesolutions.com/" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DezCode Solutions",
+    "logo": { "@type": "ImageObject", "url": "https://dezcodesolutions.com/logo-transparent.png" }
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f3f6fb;
+    --text: #1b2433;
+    --muted: #55627a;
+    --line: #d9e0ec;
+    --accent: #1f5fd1;
+    --accent-ink: #ffffff;
+    --good: #1c7a4a;
+    --warn: #a86a00;
+    --bad: #b3261e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #10151f;
+      --surface: #182131;
+      --text: #e6ebf5;
+      --muted: #9fb0cc;
+      --line: #2a364d;
+      --accent: #7fb0ff;
+      --accent-ink: #0b1220;
+      --good: #6fd29a;
+      --warn: #f0b95a;
+      --bad: #ff8f87;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 1.125rem;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  .site-bar {
+    border-bottom: 1px solid var(--line);
+    padding: 14px 20px;
+    font-family: "Manrope", system-ui, sans-serif;
+    font-weight: 700;
+  }
+  .site-bar a { color: var(--text); text-decoration: none; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 72px; }
+  h1, h2, h3 {
+    font-family: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.2;
+    color: var(--text);
+  }
+  h1 { font-size: clamp(2rem, 5vw, 2.75rem); font-weight: 800; margin: 0 0 14px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.65rem; font-weight: 800; margin: 56px 0 14px; letter-spacing: -0.01em; scroll-margin-top: 16px; }
+  h3 { font-size: 1.2rem; font-weight: 700; margin: 30px 0 8px; }
+  p { margin: 0 0 1.1em; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  .meta { color: var(--muted); font-family: "Manrope", system-ui, sans-serif; font-size: 0.9rem; margin-bottom: 28px; }
+  .lede { font-size: 1.25rem; line-height: 1.65; }
+  .takeaways {
+    background: var(--surface);
+    border-left: 4px solid var(--accent);
+    padding: 18px 22px 8px;
+    margin: 28px 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .takeaways strong { font-family: "Manrope", system-ui, sans-serif; }
+  .takeaways ul { padding-left: 1.2em; margin: 10px 0 12px; }
+  .takeaways li { margin-bottom: 6px; }
+  nav.toc { border: 1px solid var(--line); border-radius: 6px; padding: 14px 22px; margin: 28px 0; }
+  nav.toc strong { font-family: "Manrope", system-ui, sans-serif; }
+  nav.toc ol { margin: 8px 0 4px; padding-left: 1.3em; }
+  nav.toc li { margin-bottom: 2px; }
+  .table-wrap { overflow-x: auto; margin: 22px 0 28px; }
+  table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 1rem; line-height: 1.5; }
+  th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-family: "Manrope", system-ui, sans-serif; font-size: 0.85rem; background: var(--surface); }
+  .good { color: var(--good); font-weight: 600; }
+  .warn { color: var(--warn); font-weight: 600; }
+  .bad { color: var(--bad); font-weight: 600; }
+  ul, ol { padding-left: 1.3em; margin: 0 0 1.2em; }
+  li { margin-bottom: 8px; }
+  .callout {
+    background: var(--surface);
+    border-radius: 6px;
+    padding: 18px 22px;
+    margin: 30px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  details { border-bottom: 1px solid var(--line); padding: 14px 0; }
+  summary { cursor: pointer; font-family: "Manrope", system-ui, sans-serif; font-weight: 700; font-size: 1.05rem; }
+  summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  details p { margin: 10px 0 0; }
+  .cta {
+    margin-top: 48px;
+    padding: 26px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+  }
+  .cta h2 { margin-top: 0; font-size: 1.4rem; }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--accent-ink);
+    padding: 11px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: "Manrope", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .btn:hover { filter: brightness(1.08); }
+  .sources { font-size: 0.95rem; color: var(--muted); }
+  footer { border-top: 1px solid var(--line); padding: 24px 20px; text-align: center; font-family: "Manrope", system-ui, sans-serif; font-size: 0.85rem; color: var(--muted); }
+  @media (max-width: 520px) { body { font-size: 1.05rem; } h2 { font-size: 1.4rem; } }
+</style>
+</head>
+
+<body>
+<div class="site-bar"><a href="https://dezcodesolutions.com/">DezCode Solutions</a></div>
+
+<main>
+<article>
+  <h1>Core Web Vitals for Small Business: A Technical SEO Checklist for 2026</h1>
+  <p class="meta">Published October 18, 2026 &middot; 9 min read &middot; By DezCode Solutions</p>
+
+  <p class="lede">Core Web Vitals are Google's three measurements of real-world page experience: how fast the main content loads, how quickly the page reacts to input, and how stable the layout stays. The HTTP Archive's 2025 Web Almanac found that only <strong>48% of mobile websites</strong> pass all three. If your business site is among the other 52%, fixing it is one of the most practical steps in technical SEO.</p>
+
+  <p>This guide is for US small and mid-sized businesses that rely on their website for leads or online sales. It covers the exact thresholds, where most sites stand, how to diagnose problems, and what to fix first on WordPress, Shopify and custom-built sites.</p>
+
+  <div class="takeaways">
+    <strong>Key takeaways</strong>
+    <ul>
+      <li>Targets: LCP of 2.5 seconds or less, INP of 200 milliseconds or less, CLS of 0.1 or less, measured at the 75th percentile of real visits.</li>
+      <li>Mobile pass rate across the web: 36% in 2023, 44% in 2024, 48% in 2025.</li>
+      <li>Loading speed (LCP) is the metric most sites fail, and images are the usual cause.</li>
+      <li>Core Web Vitals support your SEO but do not replace relevant, helpful content.</li>
+    </ul>
+  </div>
+
+  <nav class="toc" aria-label="Table of contents">
+    <strong>In this guide</strong>
+    <ol>
+      <li><a href="#what-are-cwv">What Core Web Vitals measure</a></li>
+      <li><a href="#data">What the data says</a></li>
+      <li><a href="#rankings">Do they affect rankings?</a></li>
+      <li><a href="#diagnose">How to diagnose your site</a></li>
+      <li><a href="#fix">How to fix LCP, INP and CLS</a></li>
+      <li><a href="#cms">WordPress and Shopify specifics</a></li>
+      <li><a href="#checklist">On-page SEO checklist</a></li>
+      <li><a href="#audit">Beyond speed: what an SEO audit covers</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="what-are-cwv">What Core Web Vitals measure</h2>
+
+  <p>Google collects performance data from real Chrome users and rates each metric as good, needs improvement or poor. A site passes the assessment when at least 75% of visits are rated good on all three metrics.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Metric</th><th>What it measures</th><th>Good</th><th>Needs improvement</th><th>Poor</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>LCP</strong><br>Largest Contentful Paint</td>
+          <td>Time until the largest visible element, often a hero image or headline, renders</td>
+          <td class="good">&le; 2.5 s</td>
+          <td class="warn">2.5 to 4 s</td>
+          <td class="bad">&gt; 4 s</td>
+        </tr>
+        <tr>
+          <td><strong>INP</strong><br>Interaction to Next Paint</td>
+          <td>How quickly the page visibly responds after taps, clicks and key presses</td>
+          <td class="good">&le; 200 ms</td>
+          <td class="warn">200 to 500 ms</td>
+          <td class="bad">&gt; 500 ms</td>
+        </tr>
+        <tr>
+          <td><strong>CLS</strong><br>Cumulative Layout Shift</td>
+          <td>How much visible content shifts unexpectedly while the page loads</td>
+          <td class="good">&le; 0.1</td>
+          <td class="warn">0.1 to 0.25</td>
+          <td class="bad">&gt; 0.25</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>INP replaced First Input Delay (FID) in March 2024. Any guide that still lists FID as a current Core Web Vital is out of date. You may also see claims that Google tightened the LCP threshold in 2026. Google's own documentation still lists 2.5 seconds.</p>
+
+  <h2 id="data">What the data says about where most sites stand</h2>
+
+  <p>The 2025 Web Almanac combines the HTTP Archive crawl with Chrome User Experience Report (CrUX) field data. Its performance chapter shows steady improvement, but a large gap remains:</p>
+
   <ul>
-    <li>Good targets: LCP of 2.5 seconds or less, INP of 200 ms or less, CLS of 0.1 or less, measured at the 75th percentile of real visits.</li>
-    <li>Mobile pass rate across the web: 36% (2023), 44% (2024), 48% (2025).</li>
-    <li>Loading speed (LCP) is the metric most sites fail, and images are the usual cause.</li>
-    <li>Core Web Vitals support rankings but do not replace relevant, helpful content.</li>
+    <li>Mobile sites with good Core Web Vitals rose from <strong>36% in 2023</strong> to <strong>44% in 2024</strong> and <strong>48% in 2025</strong>.</li>
+    <li>LCP is the weakest metric. Roughly 62% of mobile sites rate good on LCP, compared with about 77% on INP and 81% on CLS, according to published summaries of the Almanac data.</li>
+    <li>Even among the 1,000 most popular mobile sites, only 51% have good Core Web Vitals.</li>
   </ul>
-</div>
 
-<p><strong>In this guide:</strong></p>
-<ul>
-  <li><a href="#what-are-cwv">What are Core Web Vitals?</a></li>
-  <li><a href="#data">What the data says</a></li>
-  <li><a href="#ranking">Do they affect Google rankings?</a></li>
-  <li><a href="#checklist">On-page and technical SEO checklist</a></li>
-  <li><a href="#cms">WordPress and Shopify fixes</a></li>
-  <li><a href="#audit">What a proper SEO audit report covers</a></li>
-  <li><a href="#packages">Choosing small business SEO packages</a></li>
-  <li><a href="#faq">FAQ</a></li>
-</ul>
+  <p>A slow mobile site is the norm, not the exception. That is the opportunity: fixing it can remove a technical weakness your competitors may still have.</p>
 
-<h2 id="what-are-cwv">What are Core Web Vitals?</h2>
+  <h2 id="rankings">Do Core Web Vitals affect Google rankings?</h2>
 
-<p>Google evaluates real Chrome user experiences and rates each metric as good, needs improvement, or poor. A site passes when at least 75% of visits are rated good for all three.</p>
+  <p>Yes, but they are one signal among many. Google includes Core Web Vitals in its page experience signals while stating that great page experience does not override content relevance. A fast page with thin content will not beat a genuinely helpful page that loads a little slower.</p>
 
-<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse; width:100%;">
-  <thead>
-    <tr style="background:#f2f2f2;">
-      <th align="left">Metric</th>
-      <th align="left">What it measures</th>
-      <th align="left">Good threshold</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>LCP</strong> (Largest Contentful Paint)</td>
-      <td>How fast the main content, often a hero image or headline, appears</td>
-      <td>2.5 seconds or less</td>
-    </tr>
-    <tr>
-      <td><strong>INP</strong> (Interaction to Next Paint)</td>
-      <td>How quickly the page responds to taps, clicks and typing</td>
-      <td>200 milliseconds or less</td>
-    </tr>
-    <tr>
-      <td><strong>CLS</strong> (Cumulative Layout Shift)</td>
-      <td>Whether content jumps around while loading</td>
-      <td>0.1 or less</td>
-    </tr>
-  </tbody>
-</table>
+  <p>The practical benefit is twofold. You remove a technical disadvantage, and visitors are less likely to leave before they read, call or buy. Treat Core Web Vitals as a foundation for your technical SEO, not a shortcut to position one.</p>
 
-<p>INP replaced First Input Delay (FID) in March 2024. Any guide that still lists FID as a current Core Web Vital is out of date. You may also see claims online that Google tightened the LCP threshold in 2026; Google's own documentation still says 2.5 seconds.</p>
+  <h2 id="diagnose">How to diagnose your site</h2>
 
-<h2 id="data">What the data says about where most websites stand</h2>
+  <p>Start by separating two kinds of data, because they can disagree:</p>
 
-<p>The 2025 Web Almanac combines the HTTP Archive crawl with Chrome User Experience Report field data:</p>
+  <ul>
+    <li><strong>Field data</strong> comes from real visitors and is what Google uses. You can see it in the Core Web Vitals report in Google Search Console, and in the top section of PageSpeed Insights.</li>
+    <li><strong>Lab data</strong> comes from a simulated test, such as Lighthouse. It is useful for debugging because it is repeatable, but a perfect lab score does not guarantee passing in the field, especially on slower phones.</li>
+  </ul>
 
-<ul>
-  <li>Mobile sites with good Core Web Vitals rose from <strong>36% in 2023</strong> to <strong>44% in 2024</strong> and <strong>48% in 2025</strong>.</li>
-  <li>LCP is the weakest metric: about 62% of mobile sites rate good, compared with roughly 77% for INP and 81% for CLS, as reported in summaries of the Almanac data.</li>
-  <li>Even among the 1,000 most popular mobile sites, only 51% have good Core Web Vitals.</li>
-</ul>
+  <p>A simple diagnostic routine:</p>
 
-<p>In practice this means a slow mobile site is the norm, not the exception. Fixing it can remove a technical disadvantage against competitors who have not addressed it.</p>
+  <ol>
+    <li>Open the Core Web Vitals report in Search Console and review mobile first. Note which URL groups are flagged as poor or needing improvement.</li>
+    <li>Run your homepage, one service or category page and one product or blog page through PageSpeed Insights. Different templates often fail for different reasons.</li>
+    <li>For each failing metric, record the cause: the LCP element, the slowest interactions, and which elements shift.</li>
+  </ol>
 
-<h2 id="ranking">Do Core Web Vitals affect Google rankings?</h2>
+  <h2 id="fix">How to fix LCP, INP and CLS</h2>
 
-<p>Yes, but with perspective. Google includes Core Web Vitals in its page experience signals, and also says that great page experience does not override content relevance. A fast page with thin content will not beat a genuinely helpful page that is a little slower. The value is twofold: you remove a technical weakness, and visitors are less likely to leave before they read or buy.</p>
+  <h3>Improving LCP (loading)</h3>
+  <p>LCP breaks down into four parts: server response time, the delay before the LCP resource starts loading, the time it takes to load, and the delay before it renders. Work through them in that order.</p>
+  <ul>
+    <li><strong>Find the LCP element.</strong> On most business sites it is a hero image. PageSpeed Insights and Chrome DevTools both identify it.</li>
+    <li><strong>Optimize that image.</strong> Serve a modern format such as WebP or AVIF at the size it is actually displayed, not a 4,000-pixel original.</li>
+    <li><strong>Do not lazy-load it.</strong> Lazy-loading is for images below the fold. For the LCP image, use <code>fetchpriority="high"</code> so the browser requests it early.</li>
+    <li><strong>Improve server response.</strong> Use page caching and a CDN. A slow first byte delays everything after it.</li>
+    <li><strong>Trim render-blocking resources.</strong> Defer non-critical JavaScript and avoid loading large CSS files that the first screen does not need.</li>
+  </ul>
 
-<h2 id="checklist">On-page and technical SEO checklist</h2>
+  <h3>Improving INP (responsiveness)</h3>
+  <p>INP reflects the delay before the browser can process an interaction, the time spent running your code, and the time to paint the result. Poor INP is almost always caused by too much JavaScript running on the main thread.</p>
+  <ul>
+    <li>Remove third-party scripts you do not need: extra chat widgets, old tracking pixels, unused sliders and popups.</li>
+    <li>Load analytics and marketing tags after the page is interactive where possible.</li>
+    <li>Break up long tasks in custom code so the browser can respond between them.</li>
+  </ul>
 
-<p>Use this <strong>on-page SEO checklist</strong> as a starting point. It combines page-speed fixes with the basics that most small-business sites still miss.</p>
+  <h3>Improving CLS (visual stability)</h3>
+  <p>Layout shifts happen when content appears without reserved space.</p>
+  <ul>
+    <li>Set <code>width</code> and <code>height</code> attributes on images, video and iframes.</li>
+    <li>Reserve space for banners, cookie notices and ads instead of injecting them above existing content.</li>
+    <li>Use <code>font-display: swap</code> and preload key fonts to reduce shifts when web fonts load.</li>
+  </ul>
 
-<ol>
-  <li><strong>Measure first.</strong> Check the Core Web Vitals report in Google Search Console for a site-wide view, then test key URLs in PageSpeed Insights. Review mobile separately, because Google uses mobile-first indexing.</li>
-  <li><strong>Fix the LCP element.</strong> Find the largest element above the fold, usually an image. Serve it in a modern format at the correct size, and do not lazy-load it.</li>
-  <li><strong>Reserve space for media.</strong> Set width and height on images, videos and embeds to prevent layout shift.</li>
-  <li><strong>Audit third-party scripts.</strong> Chat widgets, tracking pixels, review badges and sliders commonly hurt INP. Remove anything you do not actively use.</li>
-  <li><strong>Check crawlability and indexation.</strong> Confirm important pages are indexable, your XML sitemap is submitted, and there are no accidental noindex tags or broken redirects.</li>
-  <li><strong>Write unique title tags and meta descriptions.</strong> Keep titles under about 60 characters and descriptions under about 155, with the target keyword near the front.</li>
-  <li><strong>Use one H1 and a logical heading structure.</strong> Headings should reflect how a person would scan the page.</li>
-  <li><strong>Add internal links.</strong> Link service pages, related articles and your portfolio with descriptive anchor text.</li>
-  <li><strong>Add structured data where it applies.</strong> Organization, LocalBusiness, Product and Article schema help search engines understand the page.</li>
-  <li><strong>Re-test.</strong> Field data in Search Console updates on a rolling basis, so allow several weeks to see the effect.</li>
-</ol>
+  <h2 id="cms">WordPress and Shopify specifics</h2>
 
-<h2 id="cms">WordPress and Shopify: where the speed problems usually come from</h2>
+  <p><strong>WordPress.</strong> Slow mobile pages usually trace back to a heavy multipurpose theme, many plugins that each add scripts and styles, and unoptimized media. Fixes include replacing plugin sprawl with purpose-built functionality, using a lean theme, adding page caching, and compressing images. A focused <a href="https://dezcodesolutions.com/services/wordpress">custom WordPress website development</a> approach tends to give more control than stacking plugins.</p>
 
-<p><strong>WordPress.</strong> Heavy themes and stacks of plugins are the most common cause of slow mobile pages. <a href="https://dezcodesolutions.com/services/wordpress">Custom WordPress website development</a> replaces plugin sprawl with purpose-built functionality, lean theme code and sensible caching.</p>
+  <p><strong>Shopify.</strong> Store speed is shaped by theme code, image weight and the number of installed apps. Every app can inject scripts, so audit them regularly and remove leftovers from apps you have uninstalled. A <a href="https://dezcodesolutions.com/services/shopify">Shopify build focused on conversion</a> keeps collection and product pages light on mobile, where much ecommerce browsing happens.</p>
 
-<p><strong>Shopify.</strong> Store speed depends on theme code, image weight and the number of installed apps. A <a href="https://dezcodesolutions.com/services/shopify">conversion-focused Shopify build</a> keeps product and collection pages light on mobile, where a large share of ecommerce browsing happens.</p>
+  <p><strong>Custom builds.</strong> For web apps and marketing sites built on a framework such as Next.js, server-side rendering and careful image handling help both performance and crawlability.</p>
 
-<p><strong>Custom builds.</strong> If you are building a web app or marketing site from scratch, a framework such as Next.js supports server-side rendering, which helps both speed and crawlability. See <a href="https://dezcodesolutions.com/services/web-development">web development services</a> for the options.</p>
+  <h2 id="checklist">On-page SEO checklist</h2>
 
-<p>You can see WordPress and Shopify work in the <a href="https://dezcodesolutions.com/portfolio">DezCode Solutions portfolio</a>, including a members-only association website for the Palm Beach County Roofers on WordPress and branded storefronts on Shopify.</p>
+  <p>Page speed is one part of the picture. Use this on-page SEO checklist alongside your performance work:</p>
 
-<h2 id="audit">What a proper SEO audit report covers</h2>
+  <ol>
+    <li>Each page has a unique title tag under about 60 characters, with the main keyword near the front.</li>
+    <li>Each page has a unique meta description under about 155 characters that tells searchers what they will get.</li>
+    <li>One H1 per page, followed by a logical H2 and H3 structure.</li>
+    <li>Important pages are indexable, included in an XML sitemap, and free from accidental noindex tags.</li>
+    <li>Images have descriptive file names and alt text.</li>
+    <li>Pages link to each other with descriptive anchor text, not "click here."</li>
+    <li>Structured data (Organization, LocalBusiness, Product or Article) matches what is visible on the page.</li>
+    <li>The site is served over HTTPS with no mixed-content warnings.</li>
+  </ol>
 
-<p>A useful <strong>SEO audit report</strong> turns findings into a prioritized fix list rather than a score. A thorough audit typically includes:</p>
+  <h2 id="audit">Beyond speed: what an SEO audit covers</h2>
 
-<ul>
-  <li>Technical crawl results: errors, redirects, duplicate content, indexation issues.</li>
-  <li>Core Web Vitals and mobile performance by page template.</li>
-  <li>On-page review: titles, headings, content gaps against competitors.</li>
-  <li>Off-site SEO review: backlink profile quality and link opportunities.</li>
-  <li>For businesses serving a city or region, a <strong>local SEO audit</strong>: Google Business Profile, citation consistency (name, address and phone) and local landing pages.</li>
-  <li>A prioritized roadmap with owners and timelines.</li>
-</ul>
+  <p>A useful SEO audit report turns findings into a prioritized fix list. A thorough one typically includes a technical crawl (errors, redirects, duplicate content, indexation), Core Web Vitals by page template, an on-page review against competitors, and a look at your backlink profile. Businesses that serve a city or region should also get a local SEO audit covering Google Business Profile, consistent name, address and phone details across directories, and location pages.</p>
 
-<h2 id="packages">Choosing small business SEO packages</h2>
+  <p>When comparing SEO packages for small business, check that the package begins with an audit, includes technical work rather than only content, reports on leads and revenue rather than only traffic, and avoids guaranteeing page-one rankings. Nobody can honestly promise that.</p>
 
-<p>When comparing <strong>SEO packages for small business</strong> or monthly SEO packages, look past the deliverable count and ask these questions:</p>
+  <div class="callout">
+    <p>DezCode Solutions runs its <a href="https://dezcodesolutions.com/services/seo">SEO service</a> in four stages: audit (technical crawl, competitor analysis, baseline KPIs), foundation (critical fixes and tracking), growth (content and white-hat link building) and compounding (refreshing what works and pruning what does not). We recommend a 6 to 12 month engagement, because SEO builds over time.</p>
+  </div>
 
-<ul>
-  <li>Does the package start with an audit and a clear roadmap?</li>
-  <li>Is technical work included, or only content and links?</li>
-  <li>Is link building white-hat, and will you see which links were earned?</li>
-  <li>Does reporting connect rankings to leads or revenue, not just traffic?</li>
-  <li>Does the agency refuse to guarantee page-one rankings? Any honest provider will.</li>
-</ul>
+  <h2 id="faq">Frequently asked questions</h2>
 
-<p>DezCode Solutions runs SEO as a four-step program: <strong>Audit</strong> (technical crawl, competitor analysis, baseline KPIs), <strong>Foundation</strong> (critical fixes and tracking), <strong>Grow</strong> (content and white-hat link campaigns) and <strong>Compound</strong> (refresh winners, prune losers). Tools include Google Search Console, GA4, PageSpeed Insights, Screaming Frog, Ahrefs and Semrush. Learn more about the <a href="https://dezcodesolutions.com/services/seo">SEO services and campaign management</a>, or see how paid search fits alongside it with <a href="https://dezcodesolutions.com/services/google-ads">Google Ads management</a>.</p>
+  <details>
+    <summary>How long does it take to see results from Core Web Vitals fixes?</summary>
+    <p>Field data in Search Console updates over a rolling window, so allow several weeks after deploying fixes before judging the effect. Broader SEO results typically take months.</p>
+  </details>
+  <details>
+    <summary>Should I focus on mobile or desktop scores?</summary>
+    <p>Mobile first. Google uses mobile-first indexing, and the pass rate on mobile is lower than on desktop across the web.</p>
+  </details>
+  <details>
+    <summary>Can I fix Core Web Vitals without a developer?</summary>
+    <p>Some fixes are accessible to non-developers: compressing images, setting image dimensions and removing unused plugins or apps. Script loading, theme code and server configuration usually need a developer.</p>
+  </details>
+  <details>
+    <summary>Where do I check my Core Web Vitals?</summary>
+    <p>Use the Core Web Vitals report in Google Search Console for a site-wide view and PageSpeed Insights for any individual URL.</p>
+  </details>
+  <details>
+    <summary>Can any agency guarantee page-one rankings?</summary>
+    <p>No. A reputable agency can commit to a clear process, transparent reporting and measurable progress against agreed goals, but not to a specific ranking.</p>
+  </details>
 
-<h2 id="faq">Frequently asked questions</h2>
+  <section class="cta">
+    <h2>Want a second pair of eyes on your site?</h2>
+    <p>DezCode Solutions is a Lahore-based software development and digital marketing company serving clients in the USA and worldwide. See the kinds of websites and platforms we build in our portfolio, or get in touch for an audit.</p>
+    <p><a class="btn" href="https://dezcodesolutions.com/portfolio">View our portfolio</a></p>
+  </section>
 
-<h3>How long does SEO take to show results?</h3>
-<p>SEO compounds over time. A 6 to 12 month commitment is a realistic window for meaningful movement. Technical fixes like speed improvements are usually the first stage, not the whole program.</p>
+  <h2>Sources</h2>
+  <ul class="sources">
+    <li>HTTP Archive, <a href="https://almanac.httparchive.org/en/2025/performance" rel="noopener">Web Almanac 2025: Performance</a></li>
+    <li>Google, <a href="https://web.dev/articles/vitals" rel="noopener">Web Vitals overview (web.dev)</a></li>
+  </ul>
+</article>
+</main>
 
-<h3>Can anyone guarantee page-one rankings?</h3>
-<p>No. What a reputable agency can commit to is process, transparency and measurable progress against agreed KPIs.</p>
-
-<h3>Do I need a developer to fix Core Web Vitals?</h3>
-<p>For deeper issues such as script loading and theme code, usually yes. Image compression, removing unused plugins and setting image dimensions can often be done without one.</p>
-
-<h3>Should I check mobile or desktop scores?</h3>
-<p>Mobile first. Google uses mobile-first indexing, and the mobile pass rate across the web is lower than desktop.</p>
-
-<h3>Where do I check my Core Web Vitals?</h3>
-<p>Use the Core Web Vitals report in Google Search Console for your whole site, and PageSpeed Insights for any individual URL.</p>
-
-<h2>Next step</h2>
-
-<p>Start by running your top five pages through PageSpeed Insights and noting the LCP element on each. If you would rather have a team handle the audit and fixes, browse the <a href="https://dezcodesolutions.com/portfolio">DezCode Solutions portfolio</a> to see our work, then <a href="https://dezcodesolutions.com/contact">contact us</a> or call +1 (469) 646-6500. DezCode Solutions is a Lahore-based software development and digital marketing company serving clients in the USA and worldwide.</p>
-
-<h3>Sources</h3>
-<ul>
-  <li>HTTP Archive, <a href="https://almanac.httparchive.org/en/2025/performance" rel="noopener">Web Almanac 2025: Performance</a></li>
-  <li>Google, <a href="https://web.dev/articles/vitals" rel="noopener">Web Vitals overview (web.dev)</a></li>
-  <li>DezCode Solutions, <a href="https://dezcodesolutions.com/services/seo">SEO services</a></li>
-</ul>
+<footer>
+  &copy; 2026 DezCode Solutions &middot; <a href="https://dezcodesolutions.com/portfolio">Portfolio</a>
+</footer>
+</body>
+</html>
